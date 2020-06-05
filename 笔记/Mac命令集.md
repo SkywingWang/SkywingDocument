@@ -1,1 +1,1 @@
-1. 
+1. Chrome跨域: open -n /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir=/Users/skywingking/project/AbilityGroup/ChromeCrossDomainTest
