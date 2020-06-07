@@ -3,3 +3,4 @@
 3. 查看硬盘和分区分布：lsblk
 4. 查看硬盘和分区的详细信息：fdisk -l
 5. 查看服务器系统版本：cat /proc/version
+6. 创建root密码: sudo passwd
