@@ -1,1 +1,0 @@
-1. 解决克隆容量巨大代码库问题:  git clone --branch master --depth=1 https://**************.git
