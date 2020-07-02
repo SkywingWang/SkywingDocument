@@ -11,3 +11,4 @@
 11. 从linux下载文件到本地：scp username@servername:/path/filename /Users/skywingking/Downloads/（本地目录）
 12. 剪切文件：mv -fiv source目录 destination目录 （-f:force,强制直接移动而不询问，-i:若目标文件(destination)已存在，就会询问是否覆盖，-u:若目标文件已经存在，且源文件比较新，才会更新）
 13. 解压文件包：tar -xzvf test.tar.gz 
+14. 添加用户：在root权限下 useradd +用户名 添加用户。passwd +用户名 为用户设置密码。
