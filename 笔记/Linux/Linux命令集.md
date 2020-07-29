@@ -12,3 +12,4 @@
 12. 剪切文件：mv -fiv source目录 destination目录 （-f:force,强制直接移动而不询问，-i:若目标文件(destination)已存在，就会询问是否覆盖，-u:若目标文件已经存在，且源文件比较新，才会更新）
 13. 解压文件包：tar -xzvf test.tar.gz 
 14. 添加用户：在root权限下 useradd +用户名 添加用户。passwd +用户名 为用户设置密码。
+15. 查询服务器上运行的程序的位置：用ps及top命令查看进程信息。 ps -ef|grep java. 获取程序对应的PID。 通过ll /proc/“PID” 命令查询，获取程序的绝对地址
