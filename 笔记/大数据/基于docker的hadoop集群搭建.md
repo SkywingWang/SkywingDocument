@@ -128,8 +128,8 @@ vim mapred-site.xml
 
 <configuration>
 <property>
-        <name>mapred.job.tarcker</name>
-        <value>master:9001</value>
+  <name>mapred.job.tarcker</name>
+  <value>master:9001</value>
 </property>
 </configuration>
 
