@@ -1,2 +1,0 @@
-1. Chrome跨域: open -n /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir=/Users/skywingking/project/AbilityGroup/ChromeCrossDomainTest
-2. AWS 控制台: ssh -i /Users/skywingking/.ssh/aws_mastodon.pem ubuntu@ec2-18-222-137-175.us-east-2.compute.amazonaws.com
