@@ -11,7 +11,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/redis-server</string>
-        <string>/usr/local/redis-5.0.5/redis.conf</string>
+        <string>/usr/local/redis-6.0.5/redis.conf</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
