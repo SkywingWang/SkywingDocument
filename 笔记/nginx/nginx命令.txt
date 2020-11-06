@@ -1,0 +1,2 @@
+1. 安装nginx: sudo apt-get install nginx
+2. 查看nginx配置运行状态 nginx -t 
