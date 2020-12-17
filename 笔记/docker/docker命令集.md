@@ -14,4 +14,6 @@
 14. 拉取远程镜像    docker pull **
 15. 退出容器  退出并停止容器 exit  退出不停止容器 ctrl + alt + P
 16. 查看容器内部细节 docker inspect
+# 查看 容器ip 地址
+docker inspect --format='{{.NetworkSettings.IPAddress}}' ID/NAMES
 17. 重新进入正在运行的容器 docker attach "ID"

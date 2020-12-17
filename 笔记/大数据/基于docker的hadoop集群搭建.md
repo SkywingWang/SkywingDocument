@@ -27,11 +27,11 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
 10. apt-get install wget        安装wget
 11. mkdir -p opt/apache/hadoop  创建hadoop目录
 12. cd opt/apache/hadoop        进入hadoop目录
-13. wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz 下载hadoop
+13. wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz 下载hadoop
 14. tar -xvzf hadoop-2.7.7.tar.gz     解压hadoop
 15. vim ~/.bashrc       配置环境变量
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export HADOOP_HOME=/opt/apache/hadoop/hadoop-2.7.7
+export HADOOP_HOME=/opt/apache/hadoop/hadoop-2.10.1
 export HADOOP_CONFIG_HOME=$HADOOP_HOME/etc/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
 export PATH=$PATH:$HADOOP_HOME/sbin
@@ -61,7 +61,7 @@ vim core-site.xml       修改配置文件
 <configuration>
 <property>
         <name>hadoop.tmp.dir</name>
-        <value>/opt/apache/hadoop/hadoop-2.7.7/tmp</value>
+        <value>/opt/apache/hadoop/hadoop-2.10.1/tmp</value>
 </property>
 <property>
         <name>fs.default.name</name>
@@ -96,12 +96,12 @@ vim hdfs-site.xml
 </property>
 <property>
         <name>dfs.namenode.name.dir</name>
-        <value>/opt/apache/hadoop/hadoop-2.7.7/namenode</value>
+        <value>/opt/apache/hadoop/hadoop-2.10.1/namenode</value>
         <final>true</final>
 </property>
 <property>
         <name>dfs.datanode.name.dir</name>
-        <value>/opt/apache/hadoop/hadoop-2.7.7/datanode</value>
+        <value>/opt/apache/hadoop/hadoop-2.10.1/datanode</value>
         <final>true</final>
 </property>
 </configuration>
@@ -143,7 +143,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 /usr/sbin/sshd
 mkdir -p ～/var/run/sshd    创建sshd目录
 23. cd ~/           生成访问密钥
-ssh-keygen -t rsa -p '' -f ~/.ssh/id_dsa
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_dsa
 cd .ssh
 cat id_dsa.pub >> authorized_keys
 

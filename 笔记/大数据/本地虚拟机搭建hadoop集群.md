@@ -47,3 +47,5 @@ vim /etc/sysconfig/network
 改HOSTNAME字段
 改成 HOSTNAME=hadoop100
 拍快照
+
+8. hadoop配置文件：主要需要修改的配置文件有core-site.xml hdfs-site.xml mapred-site.xml yarn-site.xml
