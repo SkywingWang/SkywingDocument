@@ -17,3 +17,15 @@
 # 查看 容器ip 地址
 docker inspect --format='{{.NetworkSettings.IPAddress}}' ID/NAMES
 17. 重新进入正在运行的容器 docker attach "ID"
+18. docker 给运行中的容器添加映射端口
+第一种:
+docker inspect `container_name` | grep IPAddress
+iptables -t nat -A  DOCKER -p tcp --dport 50070 -j DNAT --to-destination 172.17.0.2:50070   //这条命令报错
+第二种:
+保存image 重新-p run
+第三种:
+更改容器的config /var/lib/docker/containers/[hash_of_the_container]/hostconfig.json
+重启docker服务
+
+
+
