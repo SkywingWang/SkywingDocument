@@ -6,3 +6,4 @@
 6. 查看所有的key：  keys *
 7. 获取某个key的值： GET KEY_NAME
 8. 删除某个key的值： DEL KEY_NAME
+9. redis连接远程: redis-cli -h IP地址 -p 端口 -a "password"
